@@ -542,9 +542,16 @@ export const mockData = {
       "icon": "🌐",
       "name": "磁力",
       "order": 13,
-      "sites": []
+      "sites": [
+        {
+          "id": "site-1765206246429",
+          "name": "导航搭建",
+          "url": "https://github.com/xtgm/lh-nav",
+          "description": "",
+          "icon": ""
+        }
+      ]
     }
   ],
-  "title": "傲然🔥",
-  "_fileSha": "15dd3c5414c49f9d1485229d001d81a619097446"
+  "title": "傲然🔥"
 }
