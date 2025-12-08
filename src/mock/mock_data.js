@@ -529,6 +529,20 @@ export const mockData = {
           "icon": "https://img.icons8.com/fluency/240/claude-ai.png"
         }
       ]
+    },
+    {
+      "id": "category-1765200995479",
+      "icon": "🌐",
+      "name": "影音娱乐",
+      "order": 0,
+      "sites": []
+    },
+    {
+      "id": "category-1765201005127",
+      "icon": "🌐",
+      "name": "磁力",
+      "order": 13,
+      "sites": []
     }
   ],
   "title": "烈火🔥"
