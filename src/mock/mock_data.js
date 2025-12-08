@@ -520,6 +520,13 @@ export const mockData = {
           "url": "https://zardh.976432.xyz/",
           "description": "",
           "icon": "https://static.readdy.ai/web/favicon-180.png"
+        },
+        {
+          "id": "site-1765199076720",
+          "name": "老王导航",
+          "url": "https://nav.eooce.com/",
+          "description": "",
+          "icon": "https://img.icons8.com/fluency/240/claude-ai.png"
         }
       ]
     }
