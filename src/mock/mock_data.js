@@ -507,6 +507,21 @@ export const mockData = {
           "icon": "/sitelogo/www.feishu.cn.ico"
         }
       ]
+    },
+    {
+      "id": "category-1765198615056",
+      "icon": "🌐",
+      "name": "导航",
+      "order": 0,
+      "sites": [
+        {
+          "id": "site-1765198638600",
+          "name": "我的导航",
+          "url": "https://zardh.976432.xyz/",
+          "description": "",
+          "icon": ""
+        }
+      ]
     }
   ],
   "title": "烈火🔥"
