@@ -34,7 +34,62 @@
 
 ## ⚙️ 配置说明 (环境变量)
 
-本项目通过环境变量进行配置，无需修改代码即可定制属于你的导航站。
+**1. 配置环境变量本地**
+
+- **如果你在 自己的服务器 去部署：**  
+  在项目根目录创建 `.env` 文件，添加以下配置：
+
+  # ==============================================
+# 🔐 核心安全配置 (必填)
+# ==============================================
+
+# 后台管理界面的登录密钥
+VITE_ADMIN_PASSWORD=your_secure_password
+
+# GitHub Personal Access Token (需要 Repo 读写权限)
+# 用于将数据保存到 GitHub 仓库
+VITE_GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
+
+# ==============================================
+# ⚙️ GitHub 仓库配置 (选填)
+# 默认会自动识别当前仓库，但在 Vercel/CF 部署时建议显式配置
+# ==============================================
+
+# GitHub 用户名
+VITE_GITHUB_OWNER=your_github_username
+
+# GitHub 仓库名称
+VITE_GITHUB_REPO=mao_nav
+
+# 数据存储的分支 (通常是 master or main)
+VITE_GITHUB_BRANCH=master
+
+# ==============================================
+# 🎨 个性化定制 (选填 - 新增功能)
+# ==============================================
+
+# 网站前台标题 (浏览器标签页和页面大标题)
+# 如果不填，默认显示 "猫猫导航" 或 mock_data.js 中的配置
+VITE_SITE_TITLE=我的专属导航
+
+# 后台管理界面标题
+# 如果不填，默认显示 "导航站管理"
+VITE_ADMIN_TITLE=我的控制台
+
+# ==============================================
+# 🛡️ 访问控制 (选填)
+# ==============================================
+
+# 是否开启前台访问锁 (设为 true 则首页也需要输入 VITE_ADMIN_PASSWORD 才能访问)
+# 留空或不填则不开启
+VITE_OPEN_LOCK=false
+
+**2. 配置环境变量**
+
+- **如果你使用 _Vercel_ 或 _Cloudflare Pages_ 部署：**  
+  **请在对应平台的「环境变量」设置界面，添加下方这些变量，无需在项目中创建 `.env` 文件。**
+
+
 
 | 变量名 | 必填 | 说明 | 示例 |
 | :--- | :---: | :--- | :--- |
@@ -46,6 +101,7 @@
 | `VITE_SITE_TITLE` | ⚪ | **网站标题**。自定义浏览器标签页和首页显示的名称。 | `我的专属导航` |
 | `VITE_ADMIN_TITLE` | ⚪ | **后台标题**。自定义后台管理界面的标题。 | `控制台` |
 | `VITE_OPEN_LOCK` | ⚪ | **前台锁定**。设为 `true` 时，访问首页也需要输入密码。 | `false` |
+
 
 
 
@@ -143,25 +199,11 @@
    <span style="color:#888;font-size:13px;">不需要勾选任何账户权限 ❌，我们只操作特定仓库，不需要账户级别的权限</span>
 6. 点击 "Generate token" 并复制生成的 Token（只显示一次）
 
-**2. 配置环境变量**
 
-- **如果你在 _自己的服务器_ 部署：**  
-  在项目根目录创建 `.env` 文件，添加以下配置：
 
-- **如果你使用 _Vercel_ 或 _Cloudflare Pages_ 部署：**  
-  请在对应平台的「环境变量」设置界面，添加下方这些变量，无需在项目中创建 `.env` 文件。
 
-```
-# 管理员密钥（自定义）
-VITE_ADMIN_PASSWORD=your_admin_password_here
 
-# GitHub Token
-VITE_GITHUB_TOKEN=your_github_token_here
-# Github 仓库所有者
-VITE_GITHUB_OWNER=your_github_owner_here
-VITE_GITHUB_REPO=your_github_repo_here
-VITE_GITHUB_BRANCH=your_github_branch_here
-```
+
 
 
 ### 本地开发
@@ -186,24 +228,29 @@ npm run dev
 
 ### 项目结构
 
-```
+
 mao_nav/
 ├── src/
-│   ├── apis/           # API 接口
-│   ├── assets/         # 静态资源（图片、样式等）
-│   ├── components/     # Vue 组件
-│   ├── mock/          # 模拟数据
-│   ├── router/        # 路由配置
-│   ├── stores/        # Pinia 状态管理
-│   ├── views/         # 页面组件
-│   ├── App.vue        # 根组件
-│   └── main.js        # 入口文件
+│   ├── apis/           # GitHub API 交互逻辑
+│   ├── assets/         # 静态资源
+│   ├── components/     # Vue 组件 (SiteManager, CategoryManager...)
+│   ├── mock/           # mock_data.js (本地数据/数据存储文件)
+│   ├── router/         # 路由配置
+│   ├── stores/         # Pinia 状态管理
+│   ├── views/          # 页面视图 (NavHomeView, AdminView)
+│   ├── App.vue         # 根组件
+│   └── main.js         # 入口文件
+└── index.html          # HTML 模板
 ├── public/            # 公共静态文件
 ├── index.html         # HTML 模板
 ├── package.json       # 项目配置
 ├── vite.config.js     # Vite 配置
 └── wrangler.toml      # Cloudflare 部署配置
-```
+
+
+
+
+
 
 ## 🎯 自定义配置
 
