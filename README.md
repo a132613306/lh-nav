@@ -1,6 +1,12 @@
-# 🐱 猫猫导航 (Mao Nav)
+# 🐱 猫猫导航 (Mao Nav) -由于原作者没修bug所以我全部修了所以重建仓库！致歉原作者！
 
-原作者：(https://github.com/maodeyu180/mao_nav)
+> 💡 **致谢与声明**
+> 
+> 本项目基于原作者 **[猫猫导航](https://github.com/maodeyu180/mao_nav)** 开发。
+>
+> 🔗 **原项目主页**：https://github.com/maodeyu180/mao_nav
+
+---
 
 ⭐ 如果这个项目对你有帮助，请给它一个 Star！
 
