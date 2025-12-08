@@ -519,7 +519,7 @@ export const mockData = {
           "name": "我的导航",
           "url": "https://zardh.976432.xyz/",
           "description": "",
-          "icon": ""
+          "icon": "https://static.readdy.ai/web/favicon-180.png"
         }
       ]
     }
