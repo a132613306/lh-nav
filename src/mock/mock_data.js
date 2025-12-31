@@ -551,6 +551,21 @@ export const mockData = {
           "icon": ""
         }
       ]
+    },
+    {
+      "id": "category-1767163599180",
+      "icon": "🌐",
+      "name": "cf",
+      "order": 0,
+      "sites": [
+        {
+          "id": "site-1767163692308",
+          "name": "cf49",
+          "url": "https://49acd.xagrdh1.de5.net/010c74d3-8609-4a83-a613-f9347bcde157",
+          "description": "https://49acd.xagrdh1.de5.net/010c74d3-8609-4a83-a613-f9347bcde157/sub",
+          "icon": ""
+        }
+      ]
     }
   ],
   "title": "傲然🔥"
