@@ -68,6 +68,13 @@ export const mockData = {
           "url": "https://curlconverter.com/",
           "description": "curl命令转换工具",
           "icon": "/sitelogo/curlconverter.com.ico"
+        },
+        {
+          "id": "site-1767945721074",
+          "name": "域名管理",
+          "url": "https://dingyuea.96857462.xyz/admin",
+          "description": "续期",
+          "icon": ""
         }
       ]
     },
