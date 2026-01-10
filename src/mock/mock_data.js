@@ -75,6 +75,13 @@ export const mockData = {
           "url": "https://dingyuea.96857462.xyz/admin",
           "description": "续期",
           "icon": ""
+        },
+        {
+          "id": "site-1768017138185",
+          "name": "订阅",
+          "url": "https://xaadasd.zeabur.app/",
+          "description": "",
+          "icon": ""
         }
       ]
     },
