@@ -82,6 +82,13 @@ export const mockData = {
           "url": "https://xaadasd.zeabur.app/",
           "description": "",
           "icon": ""
+        },
+        {
+          "id": "site-1768017262008",
+          "name": "订阅",
+          "url": "https://xaadasd.zeabur.app/",
+          "description": "",
+          "icon": "https://i2.hdslb.com/bfs/face/ae8149db0fe146563cdbf7ff346eb9bb3dc25a12.jpg@92w_92h.avif"
         }
       ]
     },
