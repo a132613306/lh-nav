@@ -96,6 +96,13 @@ export const mockData = {
           "url": "http://666999333.myhome9.de5.net/",
           "description": "磁力搜索",
           "icon": ""
+        },
+        {
+          "id": "site-1770348235691",
+          "name": "扫ip",
+          "url": "https://huggingface.co/spaces/Aaxddd56/miner-2026",
+          "description": "zarwxkjaa          Asasdf96qwdss",
+          "icon": ""
         }
       ]
     },
