@@ -96,6 +96,13 @@ export const mockData = {
           "url": "https://369.xinyum1.de5.net/",
           "description": "https://little-grass-3183.q10048.workers.dev/",
           "icon": ""
+        },
+        {
+          "id": "site-1770348039316",
+          "name": "磁力云端搜索",
+          "url": "http://666999333.myhome9.de5.net/",
+          "description": "磁力搜索",
+          "icon": ""
         }
       ]
     },
